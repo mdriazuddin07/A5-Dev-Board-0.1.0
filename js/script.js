@@ -51,4 +51,17 @@ document.addEventListener('DOMContentLoaded', () => {
             hour12: false
         });
     }
+
+
+    // Function to change the body color
+    document.getElementById("colorChangeBtn").onclick = function() {
+        // Define an array of colors
+        const colors = ["#ff5733", "#33ff57", "#3357ff", "#f0e130", "#e8339e", "#1aadab", "#e657c2"];
+        
+        // Randomly select a color from the array
+        const randomColor = colors[Math.floor(Math.random() * colors.length)];
+        
+        // Change the body background color
+        document.body.style.backgroundColor = randomColor;
+    }
 });
